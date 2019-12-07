@@ -1,0 +1,67 @@
+@import "../Base";
+
+.Btn {
+  display: inline-block;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.6rem;
+  padding: 1rem 3rem;
+  text-decoration: none;
+  border-radius: 100px;
+  position: relative;
+  transition: transform .1s;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, .1);
+  border: none;
+  cursor: pointer;
+
+  &--lg {
+    font-size: 2.25rem;
+    padding: 2rem 5rem;
+  }
+
+  &--sm {
+    font-size: 1.2rem;
+    padding: 0.6rem 1.5rem;
+  }
+
+  &--primary {
+    color: white;
+    background-color: $color-primary;
+  }
+
+  &--secondary {
+    color: white;
+    background-color: $color-secondary;
+  }
+
+  &--tertiary {
+    color: white;
+    background-color: $color-tertiary;
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-image: linear-gradient(to right, rgba(white, .05), rgba(white, .2));
+    transform: scaleX(0);
+    transition: width .3s cubic-bezier(1, 0, 0, 1);
+  }
+
+  &:hover::before {
+    transform: scaleX(1);
+    width: 100%;
+  }
+}

@@ -1,0 +1,44 @@
+@import "../Base";
+
+.NavBtn {
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+
+  & span {
+    margin-left: 3px;
+    transition: all .3s;
+  }
+
+  &:hover {
+    & span {
+      margin-left: 7px;
+    }
+  }
+
+  &--primary {
+    color: $color-primary;
+    transition: color .2s;
+
+    &:hover {
+      color: rgba($color-primary, .8);
+    }
+  }
+
+  &--secondary {
+    color: $color-secondary;
+    transition: color .2s;
+
+    &:hover {
+      color: rgba($color-secondary, .8);
+    }
+  }
+
+  &--tertiary {
+    color: $color-tertiary;
+    transition: color .2s;
+
+    &:hover {
+      color: rgba($color-tertiary, .8);
+    }
+  }
+}
