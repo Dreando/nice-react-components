@@ -3,7 +3,7 @@
 }
 
 .Section {
-  background-color: #eeeeee;
+  background-color: #fff;
   padding: 4rem;
 
   &__title {
@@ -11,6 +11,13 @@
     font-weight: 300;
     letter-spacing: 2px;
     margin-bottom: 2rem;
+  }
+
+  &__subtitle {
+    font-size: 1.75rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 1.75rem;
   }
 
   &__showcase {
@@ -25,7 +32,7 @@
     font-family: "Courier New";
     padding: 1rem;
     border-radius: 3px;
-    background-color: #fff;
+    background-color: #eeeeee;
     margin-right: 3rem;
     font-size: 1.2rem;
   }

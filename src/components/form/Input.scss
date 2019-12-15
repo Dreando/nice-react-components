@@ -1,0 +1,49 @@
+.InputGroup {
+  display: flex;
+
+  &--vertical {
+    flex-direction: column;
+    label {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &--horizontal {
+    align-items: center;
+    label {
+      margin-right: 1rem;
+    }
+  }
+
+  &__label {
+    display: inline-block;
+  }
+
+  &__input {
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding: 1rem 1.5rem;
+    border: #cccccc 1px solid;
+    border-radius: 3px;
+    outline: none;
+    position: relative;
+    transition: box-shadow .2s;
+    color: inherit;
+
+    &:focus {
+      background-color: #eeeeee;
+    }
+
+    &--positive {
+      $color-positive: #00e32d;
+      border: $color-positive 1px solid;
+      background-color: rgba($color-positive, .05);
+    }
+
+    &--negative {
+      $color-negative: #ff3636;
+      border: $color-negative 1px solid;
+      background-color: rgba($color-negative, .05);
+    }
+  }
+}
